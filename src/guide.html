@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneerdom</title>
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+        <!-- POINTERDOM -->
+        <!-- <section id="pioneerdom">
+            <!-- <img class="logo" src="../lll-removebg-preview.png" /> -->
+            <!-- <h2 class="sec-head">PIONEERDOM</h2>
+            <p class="entrepreneurial">Entrepreneurship holds the potential to transform not just our country but the entire world.</p>
+           <form action="POST" class="form-i">
+            <div class="int">
+                <label class="name">Full Name</label>
+                <input type="text" class="name-input" name="name" />
+            </div>
+            <div class="int">
+                <label class="mail">E-Mail</label>
+                <input type="email" class="email-input" name="email" />
+            </div>
+            <textarea class="text" class="int" onclick="clickHandler"  rows="12" placeholder="Enter Your Ideas" ></textarea>
+            <div class="btm " align="right">
+                <button type="submit" class="button-18">Initiate</button>
+
+            </div>
+
+           </form>
+           
+        </section>
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get A Guide</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <h1 style="text-align: center;">Get A Guide</h1>
+        </div>
+        <div class="row">
+                <h4 style="text-align:center">Entrepreneurship holds the potential to transform not just our country but the entire world.</h4>
+                <h4 style="text-align:center">Get the guide from </h4>
+        </div>
+        <div style="width: 600px;
+        margin: 0 auto;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7AlFCcqIAzd2iyqnXMBEccx92qvLys81T39fsfS4322NuuA/viewform?embedded=true" width="640" height="1515" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+    </div>
+    
+    <!-- <script>
+        function myFunction() {
+        //   document.getElementById("demo").innerHTML = "Hello World";
+        alert("Hello! I am an alert box!!");
+        }
+        </script>   -->
+        <script>
+            let form = document.querySelector("form");
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                document.querySelector("#sub").value = "Submiting..";
+                let data = new FormData(form);
+                fetch('Paste_Your_Api_EndPoint_Url', {
+                        method: "POST",
+                        body: data
+                    })
+                    .then(res => res.text())
+                    .then(data => {
+                        document.querySelector("#msg").innerHTML = data;
+                        document.querySelector("#sub").value = "Submit"
+                    });
+            })
+        </script>
+    
+</body>
+</html>

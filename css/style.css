@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&family=Open+Sans:wght@600&family=Oswald&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&display=swap');
+:root {
+  /* --background: #023c59; */
+  --background: #191919;
+  /* --foreground: #036392; */
+  --foreground: #024668;
+  --text-color1: white;
+  --text-color2: #dbb67e;
+  --graphic-color1: #1d77d5;
+  --graphic-color2: #01295b;
+  --text-color3: #fc531f; /* Startup-name*/
+  --text-color4: #59d8fc; /* About-us content*/
+  --text-color5: #dbb67e; 
+  --text-color6: white;
+  --foreground2: #333333;
+  --foreground3: #024668;
+}
+html,body{
+
+    background-color: var(--background);
+    transition: all 1s ease;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body.light
+{
+    /* --background: #dbb67e; */
+    --background: #a6e2fa;
+    /* --background: #fff; */
+	--foreground: #f5f7f8;
+	--text-color1: #023c59;
+	--text-color2: #f5f4f1;
+	--graphic-color1: #ceab78;
+    --graphic-color2: #794737;
+    --text-color3: #023c59;
+    --text-color4: #000000;
+    --text-color5: #023c59;
+    --text-color6: black;
+    --foreground2: #333333;
+    --foreground3: #024668;
+    background: var(--background,#fff);
+	transition: all 1s ease;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+}
+#loading
+{   
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    z-index:999999999999999999;
+    background: black 
+    url('https://i.pinimg.com/originals/85/e2/4b/85e24bd18e3658cd321688b4c34cc576.gif')
+     no-repeat center;
+}
+ 
+     
+ .sec-head{
+    margin-top: 60px;
+    color:var(--text-color1);
+	text-transform: uppercase;
+	font-size: 40px;
+	word-spacing: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat', Courier, monospace;
+    font-weight: 600;
+    
+}
+
+section p{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color:var(--text-color2);
+}
+section #home .logo
+{
+    border-radius: 100%;
+}
+.gallery-link{
+    margin-top: 50px;
+    
+}
+.gallery-link a{
+    text-decoration: none;
+    color: var(--text-color2,#fff);
+}
+.gallery-link a span{
+    background: rgba(255, 255, 255, 0.1);
+	padding:5px;
+}
+.gallery-link:hover a span{
+    box-shadow: 2px 2px 3px var(--foreground);
+}
+/* discord logo */
+.discordlogo{
+    position: fixed;
+    z-index: 2;
+    height: 5rem;
+    right: 1rem;
+    bottom: 1rem;
+    -webkit-filter: drop-shadow( 2px 2px 2px rgb(255, 255, 255));
+    filter: drop-shadow(2px 2px 2px 2px rgb(255, 255, 255));
+}
+buttn{
+    background:white ;
+    color: rgb(20, 90, 90);
+    width: 400px;
+    height: 50px;
+    font-family:sans-serif;
+    font-size: 30px;
+    border-color: white;
+    font-weight: 90px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: 2s;
+    transform: scaleX(1.5);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 3px;;
+    padding-bottom: 3px;
+    
+}
+ /* CSS for event section for toggle button */
+ .toggle1,
+ .toggle2 {
+   padding: 1rem;
+   font-size: xx-large;
+   border: 3px solid black;
+   cursor: pointer;
+ }
+ .toggleflex {
+   justify-content: center;
+   display: flex;
+ }
+ .radius1 {
+   border-radius: 20px 00px 00px 20px;
+ }
+ .radius2 {
+   border-radius: 00px 20px 20px 00px;
+ }
+ .toggle2 {
+   background-color: black;
+   color: white;
+ }
+ .toggle1 {
+   background-color: white;
+   color: black;
+ }
+ .cc_W_B {
+   background-color: black;
+   color: white;
+ }
+ .cc_b_w {
+   background-color: white;
+   color: black;
+ }
+ .newcss {
+   visibility: hidden;
+   position: absolute;
+ }
+ .oldcss {
+   visibility: visible;
+   position: static;
+ }
